@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 import useAxiosPublic from "../../Utils/useAxiosPublic";
 import Card from "../Card/Card";
+import NoData from "../NoData/NoData";
 
 
 
@@ -34,15 +35,15 @@ const AllProducts = () => {
 
 
     useEffect(() => {
-        axiosPublic.get(`/productCount?search=${search}&category=${category}&brandName=${brandName}`)
+        axiosPublic.get(`/productCount?search=${search}&category=${category}&brandName=${brandName}&min=${min}&max=${max}`)
             .then(data => setCount(data.data.length))
-    }, [search, category, brandName])
+    }, [search, category, brandName, min, max])
 
 
-    const { data: products = [], isLoading, refetch } = useQuery({
-        queryKey: ['all-products-lists', page, limit, search, sorting, category, brandName],
+    const { data: products = [], isLoading } = useQuery({
+        queryKey: ['all-products-lists', page, limit, search, sorting, category, brandName, min, max],
         queryFn: async () => {
-            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}&category=${category}&brandName=${brandName}`);
+            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}&category=${category}&brandName=${brandName}&min=${min}&max=${max}`);
             return data
         }
     })
@@ -169,7 +170,7 @@ const AllProducts = () => {
                         </span>
                         <button onClick={() => handlePageChange(page + 1)} disabled={currentPage === pages.length} className="btn rounded-none ml-2">Next</button>
                     </div>
-                </div> : <p className="text-6xl my-32 text-center">No Data found</p>
+                </div> : <NoData></NoData>
             }
 
         </div>
