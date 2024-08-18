@@ -1,33 +1,38 @@
 import { Link } from "react-router-dom";
 
 
-const LoginPage = () => {
-
-    const handleLogin = (e) => {
-        e.preventDefault();
-       
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        
-        const info = { email, password,};
-        console.log(info);
-    }
-
+const SignUpPage = () => {
     const handleGoogleLogin = () => {
 
+    }
+    const handleSignUp = (e) => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        const photourl = e.target.photourl.value;
+
+        const info = {name, email, password, photourl};
+        console.log(info);
     }
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen ">
                 <div className="hero-content flex-col ">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
+                        <h1 className="text-5xl font-bold">SignUP</h1>
                         <p className="py-6">
-                            Please Lonin Your Account
+                            Create Your New Account
                         </p>
                     </div>
                     <div className="card bg-base-100 w-full shrink-0 shadow-2xl">
-                        <form className="card-body px-10" onSubmit={handleLogin}>
+                        <form className="card-body px-10" onSubmit={handleSignUp}>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
+                                </label>
+                                <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+                            </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -36,13 +41,19 @@ const LoginPage = () => {
                             </div>
                             <div className="form-control">
                                 <label className="label">
+                                    <span className="label-text">Photo Url</span>
+                                </label>
+                                <input type="text" name="photourl" placeholder="url" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                                
+
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn bg-blue-500 text-lg text-white hover:bg-blue-800">Login</button>
+                                <button className="btn bg-blue-500 text-lg text-white hover:bg-blue-800">Sign up</button>
                             </div>
                         </form>
                         <div className="flex items-center pt-4 space-x-1 p-2">
@@ -57,10 +68,10 @@ const LoginPage = () => {
                                 </svg>
                             </button>
 
-                          
+
                         </div>
-                        <p  className="text-xs text-center sm:px-6 text-black pb-5">Don't have an account?
-                            <Link to={'/register'} className="underline text-sm text-blue-500"> Register Now</Link>
+                        <p className="text-xs text-center sm:px-6 text-black pb-5">Already have an account?
+                            <Link to={'/login'} className="underline text-sm text-blue-500"> Login Now</Link>
                         </p>
                     </div>
                 </div>
@@ -69,4 +80,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default SignUpPage;
