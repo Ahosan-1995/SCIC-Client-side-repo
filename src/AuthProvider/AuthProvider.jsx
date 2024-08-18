@@ -56,7 +56,7 @@ const AuthProvider = ({ children }) => {
       name:user?.displayName,
       image:user?.photoURL,
     }
-    console.log(currentUser)
+
     const { data } = await axiosPublic.put('/user', currentUser);
     return data;
   }
@@ -73,7 +73,7 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
       setUser(currentUser)
      
-      console.log(currentUser)
+     
       if (currentUser) {
        
         const userEmail = currentUser?.email || user?.email;

@@ -1,0 +1,562 @@
+[
+    {
+        "index": 1,
+        "name": "Men's Leather Jacket",
+        "image": "https://i.ibb.co/NxtkQ1n/r-BNa-OGGLNCa-AAlp-LAAD1v-PTMc44125.webp",
+        "description": "Stylish men's leather jacket, perfect for casual and formal wear. Made from high-quality leather with a modern fit.",
+        "price": 120.00,
+        "brand": "Zara",
+        "category": "Clothes",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "09:00 AM"
+        }
+    },
+    {
+        "index": 2,
+        "name": "Women's Summer Dress",
+        "image": "https://i.ibb.co/YLz7dqM/71s-Dd-IZ0g-KL-AC-UF1000-1000-QL80.jpg",
+        "description": "Lightweight and colorful summer dress, perfect for warm weather. Flowy design with floral patterns.",
+        "price": 50.00,
+        "brand": "Zara",
+        "category": "Clothes",
+        "ratings": 4.3,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "09:10 AM"
+        }
+    },
+    {
+        "index": 3,
+        "name": "Men's Running Shoes",
+        "image": "https://i.ibb.co/nRFb6NP/3-22c-143k-campus-original-imagmh22zvpagqfn.jpg",
+        "description": "Comfortable and lightweight running shoes, ideal for long-distance running. Breathable mesh upper with cushioned sole.",
+        "price": 90.00,
+        "brand": "Nike",
+        "category": "Shoes",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "09:20 AM"
+        }
+    },
+    {
+        "index": 4,
+        "name": "Women's High Heels",
+        "image": "https://i.ibb.co/BzKNxPJ/Scheme-Women-s-Classic-Slip-On-Pointy-Toe-Stiletto-High-Heel-Pumps-Shoes-Black-6-1a3c93af-d9dd-45f7.jpg",
+        "description": "Elegant high heels, perfect for formal occasions. Made with premium materials and a comfortable fit.",
+        "price": 85.00,
+        "brand": "Aldo",
+        "category": "Shoes",
+        "ratings": 4.5,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "09:30 AM"
+        }
+    },
+    {
+        "index": 5,
+        "name": "Football Jersey",
+        "image": "https://i.ibb.co/BCpF6z3/Argentina-22-Away-Authentic-Jersey-Blue-HB9657-HM30.webp",
+        "description": "Official football team jersey, made with breathable fabric. Designed for both performance and comfort.",
+        "price": 70.00,
+        "brand": "Adidas",
+        "category": "Jerseys",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "09:40 AM"
+        }
+    },
+    {
+        "index": 6,
+        "name": "Basketball Jersey",
+        "image": "https://i.ibb.co/g9gfJX2/jordan-los-angeles-lakers-lebron-james-dri-fit-nba-statement-edition-202223-jersey-purple-purple-65c.jpg",
+        "description": "Premium basketball jersey made with lightweight materials. Comfortable for both games and casual wear.",
+        "price": 65.00,
+        "brand": "Nike",
+        "category": "Jerseys",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "09:50 AM"
+        }
+    },
+    {
+        "index": 7,
+        "name": "Women's Skincare Set",
+        "image": "https://i.ibb.co/Br5RnyB/Laikou-Japan-Sakura-Skincare-Set-5-Pcs1.jpg",
+        "description": "Complete skincare set for daily moisturizing, cleansing, and rejuvenation. Suitable for all skin types.",
+        "price": 55.00,
+        "brand": "Aldo",
+        "category": "Beauty Products",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "10:00 AM"
+        }
+    },
+    {
+        "index": 8,
+        "name": "Men's Cologne",
+        "image": "https://i.ibb.co/TBvGZPP/cologne.jpg",
+        "description": "Long-lasting men's cologne with a refreshing, masculine scent. Perfect for everyday use or special occasions.",
+        "price": 65.00,
+        "brand": "Aldo",
+        "category": "Beauty Products",
+        "ratings": 4.5,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "10:10 AM"
+        }
+    },
+    {
+        "index": 9,
+        "name": "Women's Lipstick",
+        "image": "https://i.ibb.co/wdN5cwM/2ca85c49ad383babfc32c79ad5d2b132.jpg",
+        "description": "Matte-finish lipstick available in a variety of shades. Long-lasting, non-drying formula for all-day wear.",
+        "price": 20.00,
+        "brand": "Aldo",
+        "category": "Beauty Products",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "10:20 AM"
+        }
+    },
+    {
+        "index": 10,
+        "name": "Wireless Earbuds",
+        "image": "https://i.ibb.co/2StR2qy/1714908152105505.jpg",
+        "description": "Compact and high-quality wireless earbuds with noise-canceling and up to 24 hours of battery life.",
+        "price": 130.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "10:30 AM"
+        }
+    },
+    {
+        "index": 11,
+        "name": "Men's Casual Shirt",
+        "image": "https://i.ibb.co/M5DGskm/m-shr-full-hendrix-original-imagpe9myztsvwnf.jpg",
+        "description": "Comfortable and stylish men's casual shirt, available in various colors. Perfect for everyday wear.",
+        "price": 45.00,
+        "brand": "Zara",
+        "category": "Clothes",
+        "ratings": 4.4,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "10:40 AM"
+        }
+    },
+    {
+        "index": 12,
+        "name": "Women's Sneakers",
+        "image": "https://i.ibb.co/P4LmqzF/1-26725d96-a03e-4175-a22b-e9fb9d5b59c0-1024x1024.jpg",
+        "description": "Lightweight and comfortable sneakers for women, designed for both casual and athletic use.",
+        "price": 80.00,
+        "brand": "Adidas",
+        "category": "Shoes",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "10:50 AM"
+        }
+    },
+    {
+        "index": 13,
+        "name": "Men's Formal Shoes",
+        "image": "https://i.ibb.co/cTJn5b6/91311-A81-1.jpg",
+        "description": "Elegant leather formal shoes, ideal for business meetings and special events. Durable and comfortable.",
+        "price": 95.00,
+        "brand": "Nike",
+        "category": "Shoes",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "11:00 AM"
+        }
+    },
+    {
+        "index": 14,
+        "name": "Women's Perfume",
+        "image": "https://i.ibb.co/mRd6yZm/63e789a7-1fdd-40f0-8035-87858e5273d1-38152c68054c18be8b857ee3104a5ddb.jpg",
+        "description": "Luxurious women's perfume with a long-lasting floral scent. Perfect for daily use or special occasions.",
+        "price": 75.00,
+        "brand": "Aldo",
+        "category": "Beauty Products",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "11:10 AM"
+        }
+    },
+    {
+        "index": 15,
+        "name": "Men's Sports Jersey",
+        "image": "https://i.ibb.co/LPf4VVY/images-q-tbn-ANd9-Gc-QFki-Xn-QQkt-MDIEt899tc-Ax-O57n6-Jlo2aqxl-Q-s.jpg",
+        "description": "Official team sports jersey made with lightweight, breathable materials. Ideal for both play and casual wear.",
+        "price": 60.00,
+        "brand": "Adidas",
+        "category": "Jerseys",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "11:20 AM"
+        }
+    },
+    {
+        "index": 16,
+        "name": "Men's Smartwatch",
+        "image": "https://i.ibb.co/LkMFj83/e436639f8a63dfaa2b5f797726e4c22e.jpg",
+        "description": "Multifunctional smartwatch with fitness tracking, notifications, and water resistance. Compatible with both iOS and Android.",
+        "price": 200.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.5,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "11:30 AM"
+        }
+    },
+    {
+        "index": 17,
+        "name": "Men's Denim Jeans",
+        "image": "https://i.ibb.co/qsdKRH8/473-Wx593-H-469068095-blue-MODEL.jpg",
+        "description": "Classic straight-leg denim jeans for men. Durable, comfortable, and available in various sizes.",
+        "price": 60.00,
+        "brand": "Adidas",
+        "category": "Clothes",
+        "ratings": 4.5,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "12:00 PM"
+        }
+    },
+    {
+        "index": 18,
+        "name": "Women's Leather Boots",
+        "image": "https://i.ibb.co/rs0zv5p/il-570x-N-4198598262-7uwl.jpg",
+        "description": "High-quality leather boots for women, perfect for both casual and formal occasions.",
+        "price": 120.00,
+        "brand": "Nike",
+        "category": "Shoes",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "12:10 PM"
+        }
+    },
+    {
+        "index": 19,
+        "name": "Women's Yoga Pants",
+        "image": "https://i.ibb.co/zV1kC9v/Gyratedream-Girls-Leggings-Girls-Active-Workout-Leggings-Casual-Yoga-Pants-Tights-Trousers-for-11-12.jpg",
+        "description": "Comfortable and stretchable yoga pants designed for flexibility and style. Perfect for workouts and casual wear.",
+        "price": 35.00,
+        "brand": "Adidas",
+        "category": "Clothes",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "12:20 PM"
+        }
+    },
+    {
+        "index": 20,
+        "name": "Men's Running Shorts",
+        "image": "https://i.ibb.co/3h2cVYQ/l-men-s-outdoor-quick-dry-lightweight-sports-shorts-zipper-original-imagncwxxfghfkjv.jpg",
+        "description": "Lightweight and breathable running shorts, perfect for athletes. Moisture-wicking fabric for enhanced comfort.",
+        "price": 25.00,
+        "brand": "Nike",
+        "category": "Clothes",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "12:30 PM"
+        }
+    },
+    {
+        "index": 21,
+        "name": "Hair Straightener",
+        "image": "https://i.ibb.co/GMmxxcw/Singer-Hair-Straightener-Naturo-Glow-SR-Singer-8b5b0-333500.jpg",
+        "description": "Professional-grade hair straightener with ceramic plates for smooth, shiny hair. Adjustable temperature settings.",
+        "price": 80.00,
+        "brand": "Apple",
+        "category": "Beauty Products",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "12:40 PM"
+        }
+    },
+    {
+        "index": 22,
+        "name": "Makeup Brush Set",
+        "image": "https://i.ibb.co/PNcSVyB/BH-Cosmetics-lavish-elegance-15-piece-brush-set-2.jpg",
+        "description": "Complete makeup brush set for foundation, eyeshadow, and contouring. Soft bristles for smooth application.",
+        "price": 40.00,
+        "brand": "Aldo",
+        "category": "Beauty Products",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "12:50 PM"
+        }
+    },
+    {
+        "index": 23,
+        "name": "Men's Leather Wallet",
+        "image": "https://i.ibb.co/Vgvf1ns/official-dante-mens-genuine-leather-rfid-blocking-vertical-wallet-business-card-holder-anti-theft.webp",
+        "description": "Compact and stylish men's leather wallet with multiple card slots and a coin pocket.",
+        "price": 45.00,
+        "brand": "Aldo",
+        "category": "Accessories",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "01:00 PM"
+        }
+    },
+    {
+        "index": 24,
+        "name": "Wireless Gaming Mouse",
+        "image": "https://i.ibb.co/QJJNYPk/20220521-1653114456-823817.png",
+        "description": "Ergonomic wireless gaming mouse with customizable buttons and RGB lighting. High precision for competitive gaming.",
+        "price": 90.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "01:10 PM"
+        }
+    },
+    {
+        "index": 25,
+        "name": "Women's Leather Handbag",
+        "image": "https://i.ibb.co/VCj2Kx2/Women-Leather-Handbags-Hot-Medium-Shoulder-Bags-Luxury-Women-Messenger-Bag-Famous-Brands-Female-Tote.webp",
+        "description": "Elegant and spacious women's leather handbag, perfect for everyday use. Includes adjustable straps.",
+        "price": 150.00,
+        "brand": "Zara",
+        "category": "Accessories",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "01:20 PM"
+        }
+    },
+    {
+        "index": 26,
+        "name": "Men's Casual Sneakers",
+        "image": "https://i.ibb.co/8g5nfyP/3-38eeb65d-bddd-4c25-8b30-b52470991a95-1024x1024.jpg",
+        "description": "Stylish and comfortable casual sneakers, designed for everyday wear. Available in various colors.",
+        "price": 75.00,
+        "brand": "Nike",
+        "category": "Shoes",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "01:30 PM"
+        }
+    },
+    {
+        "index": 27,
+        "name": "Bluetooth Smart Speaker",
+        "image": "https://i.ibb.co/t8nq8gM/Amazon-Echo-Pop-Smart-Speaker-Charcoal-5386.jpg",
+        "description": "Compact Bluetooth speaker with deep bass and long-lasting battery life. Water-resistant design for outdoor use.",
+        "price": 60.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "01:40 PM"
+        }
+    },
+    {
+        "index": 28,
+        "name": "Men's Hoodie",
+        "image": "https://i.ibb.co/4VkBtrf/e432d9b07e6ad6f4fa27234ad9919434.jpg",
+        "description": "Comfortable men's hoodie made from soft cotton. Perfect for casual wear and available in various colors.",
+        "price": 50.00,
+        "brand": "Nike",
+        "category": "Clothes",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "01:50 PM"
+        }
+    },
+    {
+        "index": 29,
+        "name": "Women's Evening Dress",
+        "image": "https://i.ibb.co/8PYGLJH/s-l1200.jpg",
+        "description": "Elegant women's evening dress with a flattering fit. Perfect for formal occasions and available in multiple colors.",
+        "price": 180.00,
+        "brand": "Zara",
+        "category": "Clothes",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "02:00 PM"
+        }
+    },
+    {
+        "index": 30,
+        "name": "Electric Toothbrush",
+        "image": "https://i.ibb.co/ky1ghSG/electric-toothbrushes.webp",
+        "description": "Rechargeable electric toothbrush with multiple cleaning modes and long battery life. Includes two brush heads.",
+        "price": 70.00,
+        "brand": "Aldo",
+        "category": "Beauty Products",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "02:10 PM"
+        }
+    },
+    {
+        "index": 31,
+        "name": "Men's Dress Watch",
+        "image": "https://i.ibb.co/YXcsZNH/best-dress-watches-2019.jpg",
+        "description": "Classic men's dress watch with a stainless steel band and scratch-resistant glass. Water-resistant.",
+        "price": 300.00,
+        "brand": "Apple",
+        "category": "Accessories",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "02:20 PM"
+        }
+    },
+    {
+        "index": 32,
+        "name": "Women's Athletic Shoes",
+        "image": "https://i.ibb.co/Hrv396Y/Volz-080917-0060-e1550271662647.jpg",
+        "description": "Lightweight and durable athletic shoes for women, perfect for running and training.",
+        "price": 90.00,
+        "brand": "Adidas",
+        "category": "Shoes",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "02:30 PM"
+        }
+    },
+    {
+        "index": 33,
+        "name": "Gaming Laptop",
+        "image": "https://i.ibb.co/ZffkGph/615zbvo-St-ZL-AC-SL1125.jpg",
+        "description": "High-performance gaming laptop with the latest GPU and RGB keyboard. Perfect for gaming and content creation.",
+        "price": 1500.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "02:40 PM"
+        }
+    },
+    {
+        "index": 34,
+        "name": "Men's Compression Shirt",
+        "image": "https://i.ibb.co/py8V6nt/61-C4-YTBj97-L-AC-UY1000.jpg",
+        "description": "Performance compression shirt designed for athletes. Moisture-wicking and provides support during workouts.",
+        "price": 40.00,
+        "brand": "Nike",
+        "category": "Clothes",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "02:50 PM"
+        }
+    },
+    {
+        "index": 35,
+        "name": "Women's Winter Coat",
+        "image": "https://i.ibb.co/ykYxrnK/61r13-XUGORL-AC-SX679.jpg",
+        "description": "Warm and stylish women's winter coat, perfect for cold weather. Includes a detachable hood.",
+        "price": 200.00,
+        "brand": "Zara",
+        "category": "Clothes",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "03:00 PM"
+        }
+    },
+    {
+        "index": 36,
+        "name": "Wireless Charger",
+        "image": "https://i.ibb.co/x7Pb0XT/Buy-W11-Qi-Certified-15-W-Wireless-Charger-in-Pakistan-at-Dab-Lew-Tech-9.webp",
+        "description": "Fast wireless charger compatible with both Android and iOS devices. Compact and sleek design.",
+        "price": 30.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.8,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "03:10 PM"
+        }
+    },
+    {
+        "index": 37,
+        "name": "Women's Sunglasses",
+        "image": "https://i.ibb.co/x7Pb0XT/Buy-W11-Qi-Certified-15-W-Wireless-Charger-in-Pakistan-at-Dab-Lew-Tech-9.webp",
+        "description": "Stylish women's sunglasses with UV protection. Available in a variety of frame colors.",
+        "price": 120.00,
+        "brand": "Aldo",
+        "category": "Accessories",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "03:20 PM"
+        }
+    },
+    {
+        "index": 38,
+        "name": "Men's Baseball Cap",
+        "image": "https://i.ibb.co/7n1CdNH/86c86e15cec8c7f61c46384f56390835.jpg",
+        "description": "Classic men's baseball cap, adjustable and comfortable. Available in multiple colors.",
+        "price": 25.00,
+        "brand": "Adidas",
+        "category": "Accessories",
+        "ratings": 4.6,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "03:30 PM"
+        }
+    },
+    {
+        "index": 39,
+        "name": "Noise-Cancelling Headphones",
+        "image": "https://i.ibb.co/S7F7BsB/images-q-tbn-ANd9-Gc-QRw1-Iq-YGVWat-V0-CRi9jsf-OIx-LHZUwz-Rn-H8-ZYixwz-ZWok-Zb-YUENTS5-LPw-D9-CEQfa0.jpg",
+        "description": "High-quality noise-cancelling headphones with long battery life. Perfect for travel, work, or leisure.",
+        "price": 200.00,
+        "brand": "Apple",
+        "category": "Electronics",
+        "ratings": 4.9,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "03:40 PM"
+        }
+    },
+    {
+        "index": 40,
+        "name": "Men's Athletic Jersey",
+        "image": "https://i.ibb.co/4fXfDcH/51-P0-Qt0o-TXL-AC-UY1100.jpg",
+        "description": "Performance athletic jersey designed for maximum comfort and flexibility. Available in multiple team designs.",
+        "price": 60.00,
+        "brand": "Adidas",
+        "category": "Jerseys",
+        "ratings": 4.7,
+        "created_at": {
+            "date": "2024-08-16",
+            "time": "03:50 PM"
+        }
+    }
+]

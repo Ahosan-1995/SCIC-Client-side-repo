@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 
@@ -12,8 +13,8 @@ const NavBar = () => {
 
    
 
-    // const { user, logOut } = useContext(AuthContext);
-    const {user} = 'kamrul';
+    const { user, logOut } = useContext(AuthContext);
+    
 
     const scrollToTop = () => {
         window.scrollTo(0, 0)
@@ -89,7 +90,7 @@ const NavBar = () => {
                                     </div>
 
                                     <div onClick={scrollToTop} className=''>
-                                        <button onClick={handleLogout} className="btn bg-teal-500 hover:bg-teal-800 text-white font-medium  border-none px-4">LogOut</button>
+                                        <button onClick={handleLogout} className="btn bg-blue-500 hover:bg-blue-800 text-white font-medium  border-none px-4">LogOut</button>
                                     </div>
                                 </>
                                 :
