@@ -1,8 +1,28 @@
-# React + Vite
+# Product Bazzar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live site:
 
-Currently, two official plugins are available:
+- [ProductBazzar-Firebase](https://scic-project-fada2.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [GitHubLink](https://github.com/Ahosan-1995/SCIC-Client-side-repo)
+
+- [GitHubLink](https://github.com/Ahosan-1995/SCIC-Server-Side-Repo)
+
+
+
+.
+
+Features of this site:
+- Single page application loaded data efficiently
+- Full navigation control on the home page.
+- Data will be loaded very first and accurately.
+- All the content placement is well structured.
+- Secure login method.
+- Presentation of this site is professional and minimal. 
+- Responsive design.
+-JWT token verifications
+
+Technology: React, JavaScript, CSS, MongoDb, Nodejs.
+
+Dependencies To run this project locally:
+- React, React router, Tailwind CSS, Daisy UI, Firebase and have to change firebase key
