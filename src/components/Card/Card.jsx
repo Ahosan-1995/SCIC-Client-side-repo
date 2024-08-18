@@ -20,9 +20,9 @@ const Card = ({ product }) => {
                        Brand : <span className="text-gray-600 font-semibold ml-5">{product?.brand} </span>
                     </p>
                     <p>{product?.description}</p>
-                    <div className="card-actions justify-end  font-bold">
+                    <div className="card-actions justify-end flex items-center  font-bold mt-2">
                         <p className="text-xl">Price : <span className="text-blue-500 text-xl">${product?.price}</span></p>
-                        <button className="btn bg-blue-500 text-white text-lg border-none hover:bg-blue-800">Add to Cart</button>
+                        <button className="btn bg-blue-500 rounded-none text-white text-lg border-none hover:bg-blue-800">Add to Cart</button>
                     </div>
                 </div>
             </div>

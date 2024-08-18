@@ -34,15 +34,15 @@ const AllProducts = () => {
 
 
     useEffect(() => {
-        axiosPublic.get(`/productCount?search=${search}&category=${category}`)
+        axiosPublic.get(`/productCount?search=${search}&category=${category}&brandName=${brandName}`)
             .then(data => setCount(data.data.length))
-    }, [search, category])
+    }, [search, category, brandName])
 
 
     const { data: products = [], isLoading, refetch } = useQuery({
-        queryKey: ['all-products-lists', page, limit, search, sorting, category],
+        queryKey: ['all-products-lists', page, limit, search, sorting, category, brandName],
         queryFn: async () => {
-            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}&category=${category}`);
+            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}&category=${category}&brandName=${brandName}`);
             return data
         }
     })
