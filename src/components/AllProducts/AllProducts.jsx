@@ -12,7 +12,12 @@ import Card from "../Card/Card";
 
 const AllProducts = () => {
 
+    const [brandName, setBrandName] = useState('');
+    const [category, setCategory] = useState('');
+    const [sorting, setSorting] = useState('');
     const [search, SetSearch] = useState('');
+    const [min, setMin] = useState(0);
+    const [max, setMax] = useState(500000);
     const axiosPublic = useAxiosPublic();
     const [page, setPage] = useState(1);
     const [limit] = useState(6);
@@ -53,7 +58,20 @@ const AllProducts = () => {
         e.preventDefault();
         SetSearch(e.target.search.value);
     }
-
+    const handleSelectCategory = e => {
+        setCategory(e.target.value);
+    }
+    const handlePriceSearch = e => {
+        e.preventDefault();
+        setMin(e.target.min.value);
+        setMax(e.target.max.value);
+    }
+    const handleBrand = e => {
+        setBrandName(e.target.value);
+    }
+    const handleSelectSort = e => {
+        setSorting(e.target.value)
+    }
 
 
     if (isLoading) {
@@ -69,15 +87,65 @@ const AllProducts = () => {
         <div className="mt-[110px] container mx-auto">
 
 
-            <div>
+            <div className="flex gap-5 flex-wrap items-center justify-center">
                 <div>
                     <form onSubmit={handleSearch} className="flex flex-col md:flex-row  items-center justify-center gap-5">
-                        <div>
-                            <input name="search" className="w-full py-3 px-5 border-blue-300 border outline-none" type="text" placeholder="product name" />
+                        <div className="border flex border-blue-300">
+                            <input name="search" className="w-full py-3 px-5 outline-none" type="text" placeholder="product name" />
+                            <button className="btn bg-blue-500 rounded-none border-none text-white text-lg hover:bg-blue-800">Search</button>
                         </div>
-                        <button className="btn bg-blue-500 border-none text-white text-lg hover:bg-blue-800">Search</button>
                     </form>
                 </div>
+
+                <div className=" flex flex-col items-center gap-5 text-lg">
+                    <select onChange={handleSelectSort} value={sorting} className="py-3 px-5 bg-blue-500 text-white ">
+                        <option value="">Sort Your Products</option>
+                        <option value="newest">All New Products</option>
+                        <option value="low">Low to High</option>
+                        <option value="high">High to Low</option>
+                    </select>
+                </div>
+
+                <div className="">
+
+                    <select onChange={handleSelectCategory} value={category} className="py-3 px-5 text-lg bg-blue-500 text-white ">
+                        <option value="">Select Your Category</option>
+                        <option value="Clothes">Clothes</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="Jerseys">Jerseys</option>
+                        <option value="BeautyProducts">Beauty Products</option>
+
+                    </select>
+                </div>
+
+                <div className="">
+                    <select onChange={handleBrand} value={brandName} className="py-3 px-5 bg-blue-500 text-lg text-white ">
+                        <option value="">Select a Brand</option>
+                        <option value="zara">Zara</option>
+                        <option value="nike">Nike</option>
+                        <option value="aldo">Aldo</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="apple">Apple</option>
+                    </select>
+                </div>
+
+                <div className="">
+                    <form onSubmit={handlePriceSearch} className="  flex flex-wrap justify-center gap-5">
+                        <div className="w-32">
+
+                            <input name="min" className="w-full py-3 px-5 border-blue-300 border outline-none" type="number" placeholder="Min" />
+                        </div>
+                        <div className="w-32">
+
+                            <input name="max" className="w-full py-3 px-5 border-blue-300 border outline-none" type="number" placeholder="Max" />
+                        </div>
+                        <button className="btn bg-blue-500 border-none rounded-none  text-white text-lg hover:bg-blue-800">Search</button>
+                    </form>
+                </div>
+
+
             </div>
 
 
@@ -89,17 +157,17 @@ const AllProducts = () => {
                         }
                     </div>
                     <div className="flex items-center mt-5">
-                        <button onClick={() => handlePageChange(page - 1)} disabled={page === 1} className="btn mr-2">Pre</button>
+                        <button onClick={() => handlePageChange(page - 1)} disabled={page === 1} className="btn mr-2 rounded-none">Pre</button>
 
                         <span className="flex gap-4 ">
                             {
                                 pages?.map((pageNo) => <button onClick={() => {
                                     setCurrentPage(pageNo)
                                     setPage(pageNo)
-                                }} key={pageNo} className={`btn px-5 border-0 ${currentPage === pageNo ? 'bg-gray-400  text-white' : 'text-black'}   `}>{pageNo}</button>)
+                                }} key={pageNo} className={`btn px-5 border-0 rounded-none ${currentPage === pageNo ? 'bg-gray-400  text-white' : 'text-black'}   `}>{pageNo}</button>)
                             }
                         </span>
-                        <button onClick={() => handlePageChange(page + 1)} disabled={currentPage === pages.length} className="btn ml-2">Next</button>
+                        <button onClick={() => handlePageChange(page + 1)} disabled={currentPage === pages.length} className="btn rounded-none ml-2">Next</button>
                     </div>
                 </div> : <p className="text-6xl my-32 text-center">No Data found</p>
             }

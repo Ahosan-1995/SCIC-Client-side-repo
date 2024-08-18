@@ -3,9 +3,9 @@
 const Card = ({ product }) => {
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl cursor-pointer ">
+            <div className="card bg-base-100 shadow-xl cursor-pointer rounded-none ">
                 <figure className="w-full h-[350px] p-5 bg-gray-100">
-                    <img className="h-full w-full rounded-md"
+                    <img className="h-full w-full "
                         src={product?.image}
                         alt="Shoes" />
                 </figure>
