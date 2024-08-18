@@ -34,15 +34,15 @@ const AllProducts = () => {
 
 
     useEffect(() => {
-        axiosPublic.get(`/productCount?search=${search}`)
+        axiosPublic.get(`/productCount?search=${search}&category=${category}`)
             .then(data => setCount(data.data.length))
-    }, [search])
+    }, [search, category])
 
 
     const { data: products = [], isLoading, refetch } = useQuery({
-        queryKey: ['all-products-lists', page, limit, search, sorting],
+        queryKey: ['all-products-lists', page, limit, search, sorting, category],
         queryFn: async () => {
-            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}`);
+            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}&category=${category}`);
             return data
         }
     })
@@ -156,7 +156,7 @@ const AllProducts = () => {
                             products?.map(product => <Card key={product._id} product={product}></Card>)
                         }
                     </div>
-                    <div className="flex items-center mt-5">
+                    <div className="flex items-center mt-14">
                         <button onClick={() => handlePageChange(page - 1)} disabled={page === 1} className="btn mr-2 rounded-none">Pre</button>
 
                         <span className="flex gap-4 ">
