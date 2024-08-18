@@ -7,24 +7,27 @@ import MainLayouts from './Main/MainLayout.jsx';
 import LoginPage from './AllPages/LoginPage/LoginPage.jsx';
 import HomePage from './AllPages/HomePage/HomePage.jsx';
 import SignUpPage from './AllPages/SignUpPage/SignUpPage.jsx';
+import AuthProvider from './AuthProvider/AuthProvider.jsx';
+import { HelmetProvider } from 'react-helmet-async';
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayouts></MainLayouts>,
     errorElement: <p>Error!</p>,
-    children : [
+    children: [
       {
-        path : '/',
-        element:<HomePage></HomePage>
-        
-      }, 
-      {
-        path: '/login',
-        element : <LoginPage></LoginPage>
+        path: '/',
+        element: <HomePage></HomePage>
+
       },
       {
-        path :'/register',
+        path: '/login',
+        element: <LoginPage></LoginPage>
+      },
+      {
+        path: '/register',
         element: <SignUpPage></SignUpPage>
       }
     ]
@@ -33,6 +36,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} />
+    <HelmetProvider>
+      <AuthProvider>
+        <RouterProvider router={router} />
+        <Toaster></Toaster>
+      </AuthProvider>
+    </HelmetProvider>
   </StrictMode>,
 )

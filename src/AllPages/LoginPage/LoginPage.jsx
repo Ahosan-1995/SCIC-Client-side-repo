@@ -1,23 +1,68 @@
-import { Link } from "react-router-dom";
+import axios from "axios";
+import { useContext } from "react";
+import { Helmet } from "react-helmet-async";
+import toast from "react-hot-toast";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const LoginPage = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const {
+        signIn,
+        signInWithGoogle,
+    } = useContext(AuthContext);
 
     const handleLogin = (e) => {
         e.preventDefault();
-       
+
         const email = e.target.email.value;
         const password = e.target.password.value;
-        
-        const info = { email, password,};
-        console.log(info);
+
+        signIn(email, password)
+            .then(result => {
+
+                toast.success('Successfully logged in')
+                axios.post(`${import.meta.env.API_URL}/jwt`, { email: result?.user?.email }, { withCredentials: true })
+                    .then(data => {
+                        console.log(data.data)
+                        navigate(location?.state ? location.state : '/');
+                    })
+
+                navigate(location?.state ? location.state : '/');
+
+            })
+            .catch(error => {
+                console.log(error)
+                toast.error('Credentials do not match');
+            })
+
     }
 
     const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then((result) => {
 
+                toast.success('Login Successful')
+
+
+                axios.post(`${import.meta.env.API_URL}/jwt`, { email: result?.user?.email }, { withCredentials: true })
+                    .then(data => {
+                        console.log(data.data)
+                        navigate(location?.state ? location.state : '/');
+                    })
+
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => console.log(error))
     }
     return (
         <div>
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <div className="hero bg-base-200 min-h-screen ">
                 <div className="hero-content flex-col ">
                     <div className="text-center lg:text-left">
@@ -39,7 +84,7 @@ const LoginPage = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                                
+
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn bg-blue-500 text-lg text-white hover:bg-blue-800">Login</button>
@@ -57,9 +102,9 @@ const LoginPage = () => {
                                 </svg>
                             </button>
 
-                          
+
                         </div>
-                        <p  className="text-xs text-center sm:px-6 text-black pb-5">Don't have an account?
+                        <p className="text-xs text-center sm:px-6 text-black pb-5">Don't have an account?
                             <Link to={'/register'} className="underline text-sm text-blue-500"> Register Now</Link>
                         </p>
                     </div>
