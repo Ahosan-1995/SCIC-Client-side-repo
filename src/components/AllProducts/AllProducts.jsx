@@ -40,9 +40,9 @@ const AllProducts = () => {
 
 
     const { data: products = [], isLoading, refetch } = useQuery({
-        queryKey: ['all-products-lists', page, limit, search],
+        queryKey: ['all-products-lists', page, limit, search, sorting],
         queryFn: async () => {
-            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}`);
+            const { data } = await axiosPublic.get(`/products?page=${page}&limit=${limit}&search=${search}&sorting=${sorting}`);
             return data
         }
     })
@@ -100,9 +100,9 @@ const AllProducts = () => {
                 <div className=" flex flex-col items-center gap-5 text-lg">
                     <select onChange={handleSelectSort} value={sorting} className="py-3 px-5 bg-blue-500 text-white ">
                         <option value="">Sort Your Products</option>
-                        <option value="newest">All New Products</option>
-                        <option value="low">Low to High</option>
-                        <option value="high">High to Low</option>
+                        <option value="newProduct">All New Products</option>
+                        <option value="asc">Low to High</option>
+                        <option value="dsc">High to Low</option>
                     </select>
                 </div>
 
